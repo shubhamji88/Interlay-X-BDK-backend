@@ -1,5 +1,14 @@
 // require( "@interlay/interbtc-api")
 import "@interlay/interbtc-api"
+import { createInterBtcApi } from '@interlay/interbtc-api';
+import { ApiPromise } from '@polkadot/api';
+import { web3Accounts, web3Enable, web3FromAddress } from '@polkadot/extension-dapp';
+import { TypeRegistry } from '@polkadot/types/create';
+import jsonrpc from '@polkadot/types/interfaces/jsonrpc';
+import { keyring } from '@polkadot/ui-keyring';
+import { isTestChain } from '@polkadot/util';
+import * as React from 'react';
+import { useLocalStorage } from 'react-use';
 console.log("vfsvsdd")
 
 
